@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:monospace;
+
+}
+
+h.MYSKILL{
+    
+    background-color: #fff;
+    color:#010521;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    
+}
+ nav{
+     position: sticky;
+     top: 0;
+         height: 80px;
+    background-color: #010521;
+    display: flex;
+    align-items :center;
+    justify-content:space-between;
+    padding : 0px 50px 0px 100px;
+    ;
+  
+}
+div.skill.myskills{
+    height: 80px;
+    width: 100%;
+    background-color:#010521;
+}
+div.skill{
+   
+    color: #fff;
+    height : 90vh; 
+    width: 90%;
+    background-color: white; 
+    margin-right: 10%;
+    
+    
+}
+p.lorem{
+
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 10%;
+
+
+}
+  nav .logo{
+      
+      position: relative;
+      font-size: 33px;
+      color:#ffff;
+      font-weight:600;
+      border-radius: 10%;
+  }
+  p.anim  {
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 50px;
+    color: white;
+    margin-left: 10%;
+  }
+  
+  /* Animation */
+  p.anim {
+    animation: animated-text 3s steps(10,end) 1s 1 normal both,
+               animated-cursor 600ms steps(10,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 310px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
+ 
+  h.INTRO1{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 600;
+      margin-left: 10%;
+     
+      font-size:75px;
+      
+      color: white;
+  }
+ .frontendhead{
+    
+     
+     
+     background-color: #010521;
+     height:90vh;
+     width:90%;
+    margin-left:5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 10%;
+     margin-right: 5%;}
+
+
+ nav ul{
+    
+    display: flex;
+     list-style: none;
+
+ }
+ nav ul li{
+     margin:0 5px;
+   
+    
+ }
+ 
+ nav ul li a{
+    cursor:pointer;
+     text-decoration: none;
+     color:white;
+     padding :8px 10px;
+     font-weight: 1000;
+     letter-spacing: 1px;
+     
+     font-size: 19px;
+     border-radius: 5px;
+     background-color:#010521 ;
+     transition: all 0.3s ease;
+
+ }
+
+
+ 
+ nav ul li a:hover,
+ nav ul li a:active
+ {    color :orangered;
+     
+     font-weight:bolder;
+     height : 100px;
+     width: 3456px;
+     
+ }
+
+ 
+
+ div.skill{
+    height:100vh;
+    background-color: #010521 ;
+    width:50%;
+  
+ }
+ div.myskills{
+    height:80px;
+    background-color:white;
+    width:100%;
+  
+ }
+ 
+ html{
+     scroll-behavior: smooth;
+    
+ }
+h.MYSKILL{
+
+    background-color:white;
+    margin-left: 40%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+ 
+ 
+}
+
+.coding{
+
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    list-style: none;
+    margin-left: 40%;
+}
+div.progress{
+    color:white;
+    background-color: #010521;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+  
+    height: 250px;
+    width: 25%;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 2 20px 25px rgba(58,55, 55,0 .2);
+    
+
+}
+.nav{
+    border-radius: 10%;
+}
+div.main{
+    background-color: #010521;
+    height:50%;
+    width:25%; 
+    margin-left:60% ;
+    position: absolute;
+    margin-right:20% ;
+display: flex;
+justify-content: center;
+    padding: 0%;
+    border-radius: 50%;
+
+}
+div.box{
+    width: 100%;
+    height:100%;
+    background-color: #010521;
+     
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  
+
+}
+
+
+
+div.box::before{
+    content: "";
+    font-family: sans-serif;
+    font-size: 50px;
+    
+    color: black;
+    font-size-adjust: 2rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    background-color: #010521;
+
+}
+
+div.box::after{
+    content: "";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:red;
+    transition: scale(1.6);
+    border-radius: 0%;
+    animation: animate 9s  ease-in-out infinite ;
+    
+}
+
+div.progressbarmain{
+     background-color:white;
+    width: 500%;
+    height: 6px;
+   
+
+}
+div.progressbar{
+    background-color: orangered;
+    width: 350px;
+    height: 6px;
+    
+    
+
+}
+.bar1{
+    height: 18px;
+    background:#010521;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    
+}
+
